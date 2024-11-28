@@ -26,16 +26,41 @@ body {
 
 header {
   width: 100%;
-  max-width: 800px;
-  margin: 5px auto;
-  display: flex;
-  padding: 20px 20px;
+  margin: 0 auto;
+  padding: 25px 20px;
   position: fixed;
   background-color: #0a0a0a44;
   backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
   left:50%;
   transform: translateX(-50%);
+  border: 1px solid rgba(30, 30, 30, 0.46);
 }
+
+header > div {
+  width: 100%;
+  display: block;
+  max-width: 800px;
+}
+
+header > div > a {
+    background-color: rgba(39, 39, 39, 0.44);
+    font-weight: 300;
+    width: fit-content;
+}
+
+header > div > a.active {
+  background-color: rgb(130, 255, 183);
+  color: #252525;
+}
+
+header > div > a:hover {
+  background-color: rgba(67, 67, 67, 0.44);
+  color: #7dffb3;
+}
+
+
 
 * {
   box-sizing: border-box;

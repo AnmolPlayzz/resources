@@ -18,7 +18,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         li: ({ children }) => <li>{children}</li>,
 
         // Links with no inline styling
-        a: ({ children, href }) => <a href={href}>{children}</a>,
+        a: ({ children, href }) => <a target="_blank" href={href}>{children}</a>,
 
         // Images with no inline styling
         img: (props) => (
